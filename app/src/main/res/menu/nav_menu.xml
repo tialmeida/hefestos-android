@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_freela"
+        android:icon="@drawable/ic_job"
+        android:title="Bicos"/>
+    <item
+        android:id="@+id/nav_hire_freela"
+        android:icon="@drawable/ic_hire"
+        android:title="Contratar bico"/>
+    <item
+        android:id="@+id/nav_courses"
+        android:icon="@drawable/ic_courses"
+        android:title="Cursos"/>
+    <item
+        android:id="@+id/nav_jobs"
+        android:icon="@drawable/ic_jobs_vacancy"
+        android:title="Vagas de Emprego"/>
+    <item
+        android:id="@+id/nav_curriculum"
+        android:icon="@drawable/ic_curriculum"
+        android:title="Meu currículo"/>
+    <item
+        android:id="@+id/nav_person"
+        android:icon="@drawable/ic_person"
+        android:title="Perfil"/>
+    <item
+        android:id="@+id/nav_setings"
+        android:icon="@drawable/ic_settings"
+        android:title="Configurações"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_exit"
+        android:title="Sair"/>
+</menu>
