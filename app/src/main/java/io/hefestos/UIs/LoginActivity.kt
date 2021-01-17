@@ -15,5 +15,10 @@ class LoginActivity : AppCompatActivity() {
         login.setOnClickListener {
             startActivity(Intent(applicationContext, MainActivity::class.java))
         }
+
+        val register: Button = findViewById(R.id.btn_sign_up)
+        register.setOnClickListener {
+            startActivity(Intent(applicationContext, RegisterActivity::class.java))
+        }
     }
 }

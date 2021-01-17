@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/yellow"
-    android:paddingHorizontal="30dp"
-    android:paddingTop="100dp"
+    android:padding="30dp"
+    android:gravity="center"
     tools:context=".UIs.LoginActivity">
 
     <androidx.cardview.widget.CardView
@@ -19,7 +19,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp">
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="40dp">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -79,7 +80,7 @@
                 android:id="@+id/view"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:background="@color/black_12"
                 app:layout_constraintTop_toBottomOf="@+id/btn_login"
                 tools:layout_editor_absoluteX="20dp" />
@@ -108,7 +109,7 @@
                 android:id="@+id/btn_sign_up"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/bg_button_radius_5"
                 android:backgroundTint="@color/blue"
                 android:text="@string/cadastrar"
@@ -119,7 +120,7 @@
                 android:id="@+id/view_2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="20dp"
                 android:background="@color/black_12"
                 app:layout_constraintTop_toBottomOf="@+id/btn_sign_up"
                 tools:layout_editor_absoluteX="20dp" />
@@ -145,4 +146,4 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
