@@ -1,8 +1,9 @@
-package io.hefestos
+package io.hefestos.UIs
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import io.hefestos.R
 import kotlinx.coroutines.*
 
 class SplashScreenActivity : AppCompatActivity() {

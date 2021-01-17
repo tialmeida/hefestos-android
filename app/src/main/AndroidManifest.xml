@@ -9,14 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Hefestos">
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".UIs.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".UIs.LoginActivity" />
+        <activity android:name=".UIs.MainActivity"/>
     </application>
 
 </manifest>

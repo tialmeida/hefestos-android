@@ -9,6 +9,7 @@
     <color name="black_40">#66000000</color>
     <color name="black_12">#1F000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
     <color name="yellow">#FFEB3B</color>
     <color name="dark_yellow">#C8B900</color>
     <color name="blue">#0086C3</color>
