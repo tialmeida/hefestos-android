@@ -2,13 +2,16 @@ package io.hefestos.UIs
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import com.google.android.material.navigation.NavigationView
 import io.hefestos.R
+import io.hefestos.UIs.Fragments.CoursesFragment
 import io.hefestos.UIs.Fragments.FreelasFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -56,17 +59,35 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                     .commitAllowingStateLoss()
             }
             R.id.nav_hire_freela -> {}
-            R.id.nav_courses -> {}
+            R.id.nav_courses -> {
+                toolbar.title = "Cursos"
+                transction.replace(contentMain, fragments["course"]!!)
+                    .commitAllowingStateLoss()
+            }
             R.id.nav_jobs -> {}
             R.id.nav_curriculum -> {}
             R.id.nav_person -> {}
             R.id.nav_setings -> {}
             R.id.nav_logout -> {}
         }
+        drawer.closeDrawers()
         return true
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.appbar_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.appBar_notification -> {}
+        }
+        return super.onOptionsItemSelected(item)
     }
 
     private fun createFragments(){
         fragments["freela"] = FreelasFragment()
+        fragments["course"] = CoursesFragment()
     }
 }
