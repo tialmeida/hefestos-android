@@ -2,4 +2,10 @@
     <string name="app_name">Hefestos</string>
     <string name="open_drawer">Abrir</string>
     <string name="close_drawer">Fechar</string>
+    <string name="cpf">CPF</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="ainda_nao_tem_uma_conta">Ainda não tem uma conta?</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="esqueceu_a_senha">Esqueceu a senha?</string>
 </resources>
