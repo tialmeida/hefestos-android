@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import io.hefestos.R
 import io.hefestos.UIs.Fragments.CoursesFragment
 import io.hefestos.UIs.Fragments.FreelasFragment
+import io.hefestos.UIs.Fragments.HireFreelaFragment
 import io.hefestos.UIs.Fragments.JobVacancyFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -59,7 +60,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 transction.replace(contentMain, fragments["freela"]!!)
                     .commitAllowingStateLoss()
             }
-            R.id.nav_hire_freela -> {}
+            R.id.nav_hire_freela -> {
+                toolbar.title = "Contratar bicos"
+                transction.replace(contentMain, fragments["hireFreela"]!!)
+                    .commitAllowingStateLoss()
+            }
             R.id.nav_courses -> {
                 toolbar.title = "Cursos"
                 transction.replace(contentMain, fragments["course"]!!)
@@ -95,5 +100,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         fragments["freela"] = FreelasFragment()
         fragments["course"] = CoursesFragment()
         fragments["vacancy"] = JobVacancyFragment()
+        fragments["hireFreela"] = HireFreelaFragment()
     }
 }

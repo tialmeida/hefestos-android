@@ -11,4 +11,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="se_candidatar">Se candidatar</string>
+    <string name="titulo">Título</string>
+    <string name="descricao">Descrição</string>
+    <string name="valor_ofertado_rs">Valor ofertado R$</string>
+    <string name="contratar_bico">Contratar bico</string>
+    <string name="ver_candidatos">Ver Candidatos</string>
+    <string name="excluir">Excluir</string>
+    <string name="editar">Editar</string>
 </resources>

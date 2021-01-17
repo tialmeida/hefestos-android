@@ -2,6 +2,7 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/white"
@@ -18,6 +19,7 @@
             android:layout_height="wrap_content"
             android:background="@color/blue"
             android:padding="20dp">
+
             <TextView
                 android:id="@+id/textView_title"
                 android:layout_width="wrap_content"
@@ -26,31 +28,19 @@
                 android:textColor="@color/white"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/textView_description"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
-                android:textColor="@color/white_60"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_title" />
-
-            <TextView
-                android:id="@+id/textView_price"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:text="R$ 50,00"
-                android:textColor="@color/white"
-                android:textSize="20sp"
-                android:textStyle="bold"
+            <ImageButton
+                android:id="@+id/imageButton_more"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:backgroundTint="@color/transparent"
+                android:src="@drawable/ic_more_vert"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView_description" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -59,46 +49,38 @@
             android:paddingVertical="15dp"
             android:paddingHorizontal="20dp">
 
-            <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/circleImageView_userPhoto"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/user"
+            <TextView
+                android:id="@+id/textView_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body 2: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, "
+                android:textColor="@color/black_40"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView_userName"
+                android:id="@+id/textView_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginStart="10dp"
-                android:text="Name Last Name"
-                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:text="R$ 50,00"
+                android:textColor="@color/light_blue"
                 android:textSize="18sp"
-                app:layout_constraintStart_toEndOf="@+id/circleImageView_userPhoto"
-                app:layout_constraintTop_toTopOf="@+id/circleImageView_userPhoto" />
-
-            <TextView
-                android:id="@+id/textView_city"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"
-                android:layout_marginStart="10dp"
-                android:text="City - BA"
-                android:textSize="16sp"
-                app:layout_constraintBottom_toBottomOf="@+id/circleImageView_userPhoto"
-                app:layout_constraintStart_toEndOf="@+id/circleImageView_userPhoto" />
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_description" />
 
             <Button
                 android:id="@+id/btn_apply"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:layout_marginTop="10dp"
-                android:text="@string/se_candidatar"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/bg_button_radius_20"
                 android:backgroundTint="@color/blue"
-                app:layout_constraintTop_toBottomOf="@+id/circleImageView_userPhoto" />
+                android:text="@string/ver_candidatos"
+                app:layout_constraintTop_toBottomOf="@+id/textView_price"
+                tools:layout_editor_absoluteX="20dp" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>
