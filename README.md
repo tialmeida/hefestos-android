@@ -39,7 +39,7 @@ Sumário
 ### Usando
 
 <p>
-    Basta aperta o botão "run" do Android Studio com o emulador instalado ou o celular conectado
+    Basta apertar o botão "run" do Android Studio com o emulador instalado ou o celular conectado
 </p>
 
 ## Tecnologias
