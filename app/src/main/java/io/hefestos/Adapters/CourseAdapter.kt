@@ -25,7 +25,7 @@ class CourseAdapter(val courses: ArrayList<Course>): RecyclerView.Adapter<Course
             title.text = course.title
             address.text = course.address
             if(course.price != 0f){
-                price.text = "R$ ${course.price}"
+                price.text = "R$ ${course.price}0"
             }
             startDate.text = course.startDate
             endDate.text = course.endDate

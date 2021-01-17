@@ -29,7 +29,7 @@ class FreelaAdapter(val freelas: ArrayList<Freela>): RecyclerView.Adapter<Freela
             if(freela.price == 0f){
                 price.text = "Gratuito"
             }else{
-                price.text = "R$ ${freela.price.toString()}"
+                price.text = "R$ ${freela.price}0"
             }
             name.text = freela.userName
             city.text = freela.userCity

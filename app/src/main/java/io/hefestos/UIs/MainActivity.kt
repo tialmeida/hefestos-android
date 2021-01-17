@@ -13,6 +13,7 @@ import com.google.android.material.navigation.NavigationView
 import io.hefestos.R
 import io.hefestos.UIs.Fragments.CoursesFragment
 import io.hefestos.UIs.Fragments.FreelasFragment
+import io.hefestos.UIs.Fragments.JobVacancyFragment
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var drawer: DrawerLayout
@@ -64,7 +65,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
                 transction.replace(contentMain, fragments["course"]!!)
                     .commitAllowingStateLoss()
             }
-            R.id.nav_jobs -> {}
+            R.id.nav_jobs -> {
+                toolbar.title = "Vagas"
+                transction.replace(contentMain, fragments["vacancy"]!!)
+                    .commitAllowingStateLoss()
+            }
             R.id.nav_curriculum -> {}
             R.id.nav_person -> {}
             R.id.nav_setings -> {}
@@ -89,5 +94,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun createFragments(){
         fragments["freela"] = FreelasFragment()
         fragments["course"] = CoursesFragment()
+        fragments["vacancy"] = JobVacancyFragment()
     }
 }
