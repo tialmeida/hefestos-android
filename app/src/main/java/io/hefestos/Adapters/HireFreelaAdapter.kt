@@ -28,7 +28,8 @@ class HireFreelaAdapter(val context: Context, val hireFreelas: ArrayList<HireFre
         holder.run {
             title.text = hireFreela.title
             description.text = hireFreela.description
-            price.text = hireFreela.price.toString() + "0"
+            price.text = "R$" +
+                    "" + hireFreela.price.toString() + "0"
         }
     }
 
