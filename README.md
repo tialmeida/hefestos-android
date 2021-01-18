@@ -7,6 +7,9 @@
     O Hefestos é uma plataforma que tem como principal objetivo auxíliar os jovens que estão ingressando no mercado de trabalho e os que estão precisando de dinheiro rápido.<br>
     Através dele é possível buscar bicos, vagas de emprego e cursos gratuitos e pagos.
     Esse repositório contém o cliente Android da plataforma que é direcionado aos jovens ingressantes no mercado de trabalho e estudantes.
+    
+    Hefesto é o deus do fogo, dos metais e da metalurgia na mitologia grega. Sua figura também estava associada ao trabalho**.
+
 </p>
 
 Sumário
