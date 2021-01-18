@@ -40,6 +40,7 @@ Sumário
 
 <p>
     Basta apertar o botão "run" do Android Studio com o emulador instalado ou o celular conectado
+    Ou, basta instalar o apk, encontrado em app\release, em um smartphone Android
 </p>
 
 ## Tecnologias
